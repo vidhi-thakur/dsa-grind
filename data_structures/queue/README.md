@@ -12,3 +12,48 @@ Methods that a queue data structure has: -
 4. <u>isEmpty</u>: checks if the array is null,
 5. <u>size</u>: returns the size of the array,
 6. <u>print</u>: prints all the elements
+
+### Implementstion
+
+```
+class Queue {
+    constructor() {
+        this.item = [];
+    }
+
+    enqueue(el) {
+        this.item.push(el);
+    }
+
+    dequeue() {
+        return this.isEmpty() ? "Queue is empty!" :  this.item.shift();
+    }
+
+    peek() {
+        return this.isEmpty() ? "Queue is empty!" : this.item[0];
+    }
+
+    isEmpty() {
+        return this.item.length === 0;
+    }
+
+    size() {
+        return this.item.length;
+    }
+
+    print() {
+        return this.item.forEach(val => console.log(val));
+    }
+}
+
+let que = new Queue();
+que.enqueue(1);
+que.enqueue(3);
+que.enqueue(6);
+que.enqueue(2);
+que.enqueue(7);
+que.dequeue();
+console.log(que.peek()); // 3
+console.log(que.size()); // 4
+que.print(); // 3 6 2 7
+```
