@@ -1,6 +1,6 @@
 ## Queue data structure
 
-- Queue can be implemented with array and a linked list.
+- A queue can be implemented with an array and a linked list.
 
 Queue data structure follows <u>First In First Out (FIFO)</u> principle. Imagine standing in a line in a coffee shop, the first person added to the line is served coffee first.
 
