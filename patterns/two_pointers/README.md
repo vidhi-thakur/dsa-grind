@@ -9,3 +9,5 @@ With multiple pointers, we can do comparisons without relying on multiple loops.
 2. <u>Parallel pointers</u>: pointers start at the same end and move in the same direction (different speeds or different criteria for pointer movement).
 
 If the time complexity of an algorithm is O(N^2), two pointer pattern reduces the time complexity of the algorithm by O(N).
+
+Leetcode link: https://leetcode.com/problem-list/two-pointers/
